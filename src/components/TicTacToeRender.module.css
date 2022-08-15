@@ -138,4 +138,20 @@
     width: 100px;
     height: 100px;
   }
+  .img00,
+  .img01,
+  .img02,
+  .img10,
+  .img11,
+  .img12 {
+    border-bottom: 4px solid black;
+  }
+  .img00,
+  .img01,
+  .img10,
+  .img11,
+  .img20,
+  .img21 {
+    border-right: 4px solid black;
+  }
 }
