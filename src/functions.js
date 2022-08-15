@@ -44,9 +44,10 @@ const cpuMoveIndex = (table) => {
       }
     });
   });
-  console.log(emptyIndexes)
-  const randomIndex = Math.floor(Math.random() * emptyIndexes.length)
-  return [emptyIndexes[randomIndex].rowIndex, emptyIndexes[randomIndex].colIndex]
+  if (emptyIndexes.length !== 0) {
+    const randomIndex = Math.floor(Math.random() * emptyIndexes.length)
+    return [emptyIndexes[randomIndex].rowIndex, emptyIndexes[randomIndex].colIndex]
+  }
 }
 
 const cpuMover = (index, table, setTable, setWinner) => {
